@@ -4,7 +4,7 @@ import { FETCH_CLIENT_QUERY } from "../graphql/query/clientQuery";
 import { DELETE_CLIENT_MUTATION } from "../graphql/mutation/clientMutaions";
 import AddClient from "./AddClient";
 
-interface ClientInterface {
+export interface ClientInterface {
   email: string;
   id: string;
   name: string;
