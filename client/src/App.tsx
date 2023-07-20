@@ -5,11 +5,16 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Users from "./components/Users";
+import Colors from "./pages/Colors";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/colors",
+    element: <Colors />,
   },
   {
     path: "/users",
@@ -24,10 +29,10 @@ function App() {
   return (
     <>
       <ApolloProvider client={client}>
-        <div className="container mx-auto">
-          <Header />
-          <RouterProvider router={router} />
-        </div>
+        {/* <div className="container mx-auto"> */}
+        {/* <Header /> */}
+        <RouterProvider router={router} />
+        {/* </div> */}
       </ApolloProvider>
     </>
   );

@@ -2,6 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient_1 {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 121, 108, 0.8155637254901961) 25%,
+    /* rgba(208, 83, 212, 0.905) 50%, */ rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.gradient_4 {
+  background: radial-gradient(
+    circle,
+    rgba(205, 59, 101, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.gradient_3 {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.gradient_2 {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(9, 121, 108, 0.8155637254901961) 25%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
