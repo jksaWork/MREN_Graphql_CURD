@@ -4,11 +4,16 @@ import Header from "./components/Header";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
+import Users from "./components/Users";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/users",
+    element: <Users />,
   },
 ]);
 function App() {
